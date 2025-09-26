@@ -2,7 +2,7 @@
 # kolmzkuz
 
 link vercel
-https://kolmzkuz.vercel.app/
+[[https://kolmzkuz.vercel.app/](https://kolmzkuzactualizado2609.vercel.app/)](https://kolmzkuzactualizado2609.vercel.app/pages/tecnico.html)
 
 Hola profe 
 esta pagina esta dedicada a la presentacion de los producto de la empresa, ver el catalogo de producto que al ingresar al link pueda ver todos los producto que tiene la empresa, en la pagina prinsipal deberia ver lo producto mas comprados entre otras cosas, 
