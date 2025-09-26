@@ -1,0 +1,209 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="pagina contacto">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src=""></script>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>kolm</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+</head>
+
+<body>
+    <header>
+        <header>
+      <nav class="navbar navbar-dark fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="barra">
+            
+            <img src="../assets/image/banner.png" class="bannerborder2" alt="baner">
+            <ul class="buttons">
+              <li><a href="../index.html" class="pestana">Inicio</a></li>
+              <li><a href="../pages/contacto.html" class="indice">Contacto</a></li>
+              <li><a href="../pages/empresa.html" class="pestana">Empresa</a></li>
+              <li><a href="../pages/sucursales.html" class="pestana">Sucursales</a></li>
+              <li><a href="../pages/tecnico.html" class="pestana">Tecnico</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler hamburger"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Kolm
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Lista
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="./contacto.html"
+                        >Contacto</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empresa.html"
+                        >Empresa</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./sucursales.html"
+                        >Sucursales</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./tecnico.html"
+                        >Tecnico</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    </header>
+    <h1 class="titulo gal colortituloempres" >Envianos un mensaje </h1>
+   
+    <main class="mainContacto container my-5">
+
+        
+
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 ">
+                <img class="img-fluid rounded " data-aos="zoom-in-down"
+          data-aos-duration="2000"
+           src="../assets/image/correo.jpg"
+                    alt="Foto correo ">
+            </div>
+
+            <div class="col-12 col-lg-8 " data-aos="zoom-in-up"
+          data-aos-duration="2000">
+                
+                <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                    <fieldset class="border rounded-3 p-4  ">
+                        <legend class="float-none w-auto px-2">Mandanos el mensaje!</legend>
+                        <div class="mb-3">
+                            <label class="form-label" for="nombreyapellido">Nombre y Apellido</label>
+                            <input class="form-control" type="text" name="nombreyapellido" id="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="correo">Correo electronico</label>
+                            <input class="form-control" type="email" name="correo" id="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class=" form-label  "  for="comentario">Detalla tu comentario a
+                                continuacion</label>
+                            <textarea class="form-control  " name="comentario" id=""></textarea>
+                        </div>
+
+                        <input class="btn" type="submit" value="ENVIAR"> 
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+
+            
+
+        </div>
+    </main>
+    
+        <footer>
+      <img src="../assets/image/banner.png" class="bannerborder" alt="banner" />
+      <div class="enlaces">
+        <h2>Enlaces </h2>
+        <ul class="enlaces-list">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="empresa.html">empresa</a></li>
+          <li><a href="sucursales.html">sucursales</a></li>
+          <li><a href="tecnico.html">tecnico</a></li>
+        </ul>
+      </div>
+      <div class="redes">
+        <a href="https://www.facebook.com/ElectronicaKolm/?locale=es_LA" aria-label="Facebook"
+          ><i class="fab fa-facebook icono"></i
+        ></a>
+        <a href="https://www.instagram.com/electronica.kolm/?hl=es" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram icono"></i
+        ></a>
+        <a href="https://www.youtube.com/@Kolm-CL" aria-label="YouTube"
+          ><i class="fa-brands fa-youtube icono"></i
+        ></a>
+        <a href="https://www.tiktok.com/@electronica.kolm" aria-label="TikTok"
+          ><i class="fa-brands fa-tiktok icono"></i
+        ></a>
+      </div>
+    </footer>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+      <a href="https://wa.me/56953241156" target="whatsapp" class="whatsapp-fixed">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Icono de WhatsApp">
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

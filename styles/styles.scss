@@ -1,0 +1,411 @@
+
+
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box-shadow(
+  $x: 1px,
+  $y: 1px,
+  $blur: 1px,
+  $spread: 1px,
+  $color: rgba(0, 0, 0, 0.2)
+) {
+  box-shadow: $x $y $blur $spread $color;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $font-stack;
+}
+
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 20px;
+}
+
+
+nav {
+  background-color: $color-primary;
+}
+
+
+.barra {
+  @include flex-center(space-evenly, center);
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  @include box-shadow();
+}
+
+.indice {
+  text-decoration: rgba(220, 250, 88, 0.667) 4px underline;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.banner {
+  @include flex-center(center, center);
+  width: 100%;
+  margin-bottom: 200px;
+  height: 70vh;
+}
+
+.carrusel {
+  margin: 120px 0 150px 0;
+}
+
+
+
+.titulo-base {
+  text-align: center;
+  border-radius: 5px;
+  @include box-shadow(10px, 10px, 0, 0);
+}
+
+.titulo {
+  @extend .titulo-base;
+  color: rgb(252, 253, 249);
+  border: $color-dark;
+  background-color: $color-primary;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 450px;
+}
+
+.subtitulo {
+  @extend .titulo-base;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #192c1e;
+  border-radius: 15px;
+  padding: 0 20px;
+  height: 100px;
+  @include flex-center(center, center);
+}
+
+.buttons {
+  @include flex-center(space-around, center);
+  text-decoration: none;
+  list-style: none;
+
+  li {
+    margin-right: 50px;
+  }
+
+  .pestaña {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;con
+
+    &:hover {
+      color: $color-dark;
+      transition: 850ms;
+    }
+  }
+}
+
+.redes {
+  @include flex-center(space-evenly, center);
+
+  a {
+    text-decoration: none;
+    color: $color-light;
+
+    &:hover {
+      color: $color-dark;
+      transition: 500ms;
+    }
+  }
+}
+
+
+
+.contenedor-cat {
+  @include flex-center(space-around, center);
+  margin: 150px 0;
+}
+
+.categoria {
+  height: 400px;
+  width: 400px;
+  @include flex-center(center, center);
+  border-radius: 15px;
+  @include box-shadow(5px, 5px, 5px, 5px);
+  color: $color-muted;
+  background-size: cover;
+}
+
+.galeria {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item5 item2 item6"
+    "item5 item4 item7";
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 1rem;
+  margin: 0 10%;
+
+  .galeria-item {
+    background-color: #1e9494;
+    border: 1px solid $color-primary;
+    @include flex-center(center, center);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+      background-color: #ccc;
+    }
+  }
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+.item7 {
+  grid-area: item6;
+}
+
+  
+
+
+.instrucciones {
+  width: 45%;
+  margin-right: 50px;
+  background-color: rgb(243, 248, 223);
+  padding: 25px;
+  border-radius: 15px;
+  @include box-shadow();
+  color: rgb(194, 176, 176);
+}
+
+
+.icono {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 10%;
+    color: aliceblue;
+  }
+
+  .barra {
+    width: auto;
+    margin-left: 25px;
+  }
+  .titulo {
+    font-size: 18px;
+    width: 100%;
+  }
+  .subtitulo {
+    font-size: 16px;
+  }
+
+
+  .sobre-texto {
+    width: 80%;
+    margin-right: 0;
+    @include flex-center(center, center);
+    flex-direction: column;
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  .categorias {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+
+    h1 {
+      font-size: 18px;
+      margin-top: 100px;
+    }
+  }
+
+  .contenedor-cat {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .gal {
+    width: 50%;
+  }
+
+  .galeria {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7";
+    grid-template-columns: 1fr;
+    grid-auto-rows: 180px;
+  }
+
+  .carrusel {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 0;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .enlaces {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  .enlaces-list {
+    margin-right: 20px;
+  }
+  .icono {
+    font-size: 20px;
+  }
+}
+
+footer {
+  @include flex-center(space-evenly, center);
+  background-color: $color-primary;
+  height: 200px;
+  margin-top: 100px;
+
+  img {
+    height: 150px;
+  }
+}  
+p {
+    font-size: 14px;
+  }
+
+  .categoria {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .instrucciones {
+    width: 80%;
+    margin: 0;
+  }
+  .enlaces {
+  @include flex-center(center, center);
+  flex-direction: column;
+  margin-top: 20px;
+
+  h2 {
+    color: $color-light;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .enlaces-list {
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+
+    a {
+      color: $color-light;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-dark;
+        transition: 500ms;
+      }
+    }
+  }
+}
+}
+  h1 {
+    color: $color-light;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
