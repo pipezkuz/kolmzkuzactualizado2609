@@ -189,13 +189,13 @@ width: 40px;
 .buttons li {
   margin-right: 60px;
 }
-.buttons .pestaña {
+.buttons .pestana {
   text-decoration: none;
   color: aliceblue;
   font-weight: 600;
   font-size: 14px;
 }
-.buttons .pestaña:hover {
+.buttons .pestana:hover {
   color: #07110a;
   transition: 850ms;
 }
