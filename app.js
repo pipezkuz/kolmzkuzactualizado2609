@@ -28,7 +28,7 @@ function seleccionarProducto() {
 
   let indice = parseInt(prompt("Ingrese el número del producto que desea comprar:\n" + lista)) - 1;
 
-  while (indice < 0 || indice >= 3 || isNaN(indice)) {
+  while (indice < 0 || indice >= 3 || (indice)) {
     alert("Opción inválida. Por favor, ingrese un número entre 1 y 3.");
     indice = parseInt(prompt("Ingrese el número del producto que desea comprar:\n" + lista)) - 1;
   }
@@ -48,12 +48,12 @@ function agregarDiscoDuro() {
 
     let indice = parseInt(prompt("Seleccione el disco duro que desea agregar:\n" + lista)) - 1;
 
-    while (indice < 0 || indice >= 3 || isNaN(indice)) {
+    while (indice < 0 || indice >= 3 || (indice)) {
       alert("Opción inválida. Por favor, ingrese un número entre 1 y 3.");
       indice = parseInt(prompt("Seleccione el disco duro que desea agregar:\n" + lista)) - 1;
     }
 
-    alert(`Agregaste ${productos[indice + 3]} al carrito 🛒`);
+    alert(`Agregaste ${productos[indice + 3]} al carro`);
     return precios[indice + 3];
   } else {
     alert("No se agregó ningún disco duro.");
@@ -73,12 +73,12 @@ function agregarMemoriaRAM() {
 
     let indice = parseInt(prompt("Seleccione la memoria RAM que desea agregar:\n" + lista)) - 1;
 
-    while (indice < 0 || indice >= 3 || isNaN(indice)) {
+    while (indice < 0 || indice >= 3 || (indice)) {
       alert("Opción inválida. Por favor, ingrese un número entre 1 y 3.");
       indice = parseInt(prompt("Seleccione la memoria RAM que desea agregar:\n" + lista)) - 1;
     }
 
-    alert(`Agregaste ${productos[indice + 6]} al carrito 🛒`);
+    alert(`Agregaste ${productos[indice + 6]} al carro`);
     return precios[indice + 6];
   } else {
     alert("No se agregó ninguna memoria RAM.");
@@ -88,7 +88,7 @@ function agregarMemoriaRAM() {
 
 
 let productoPrincipal = seleccionarProducto();
-alert(`Agregaste ${productos[productoPrincipal]} al carrito 🛒`);
+alert(`Agregaste ${productos[productoPrincipal]} al carro`);
 
 let total = precios[productoPrincipal];
 
