@@ -38,9 +38,9 @@ function seleccionarProducto() {
 
 
 function agregarDiscoDuro() {
-  let respuesta = prompt("¿Desea agregar un disco duro a su compra? (sí/no)").toLowerCase();
+  let respuesta = prompt("¿Desea agregar un disco duro a su compra? (1 para sí/ o enter para no)");
 
-  if (respuesta === "sí" || respuesta === "si") {
+  if (respuesta === "1" ) {
     let lista = "";
     for (let i = 3; i < 6; i++) {
       lista += `${i - 2}. ${productos[i]} - $${precios[i]} (Stock: ${stock[i]})\n`;
@@ -63,9 +63,9 @@ function agregarDiscoDuro() {
 
 
 function agregarMemoriaRAM() {
-  let respuesta = prompt("¿Desea agregar memoria RAM a su compra? (sí/no)").toLowerCase();
+  let respuesta = prompt("¿Desea agregar memoria RAM a su compra? (preciona 1 sí o enter para no)");
 
-  if (respuesta === "sí" || respuesta === "si") {
+  if (respuesta === "1" ) {
     let lista = "";
     for (let i = 6; i < 9; i++) {
       lista += `${i - 5}. ${productos[i]} - $${precios[i]} (Stock: ${stock[i]})\n`;
