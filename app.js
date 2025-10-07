@@ -28,7 +28,7 @@ function seleccionarProducto() {
 
   let indice = parseInt(prompt("Ingrese el número del producto que desea comprar:\n" + lista)) - 1;
 
-  while (indice < 0 || indice >= 3 || (indice)) {
+  while (indice < 0 || indice >= 3 || isNaN(indice)) {
     alert("Opción inválida. Por favor, ingrese un número entre 1 y 3.");
     indice = parseInt(prompt("Ingrese el número del producto que desea comprar:\n" + lista)) - 1;
   }
@@ -48,7 +48,7 @@ function agregarDiscoDuro() {
 
     let indice = parseInt(prompt("Seleccione el disco duro que desea agregar:\n" + lista)) - 1;
 
-    while (indice < 0 || indice >= 3 || (indice)) {
+    while (indice < 0 || indice >= 3 || isNaN(indice)) {
       alert("Opción inválida. Por favor, ingrese un número entre 1 y 3.");
       indice = parseInt(prompt("Seleccione el disco duro que desea agregar:\n" + lista)) - 1;
     }
@@ -73,7 +73,7 @@ function agregarMemoriaRAM() {
 
     let indice = parseInt(prompt("Seleccione la memoria RAM que desea agregar:\n" + lista)) - 1;
 
-    while (indice < 0 || indice >= 3 || (indice)) {
+    while (indice < 0 || indice >= 3 || isNaN(indice)) {
       alert("Opción inválida. Por favor, ingrese un número entre 1 y 3.");
       indice = parseInt(prompt("Seleccione la memoria RAM que desea agregar:\n" + lista)) - 1;
     }
